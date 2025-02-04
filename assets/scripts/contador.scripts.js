@@ -1,27 +1,20 @@
-function soma (){
-    let numeroA = Number(document.getElementById("numeroA").value);
-    let numeroB = Number(document.getElementById("numeroB").value);
+let contador = 0;
 
-    let result = numeroA + numeroB;
-
-    document.getElementById("result").innerText = result;
+function atualizarContador (){
+    document.getElementById("counter").innerText = contador;
 }
 
-function sub (){
-    let numeroA = Number(document.getElementById("numeroA").value);
-    let numeroB = Number(document.getElementById("numeroB").value);
-
-
-    let result = numeroA - numeroB;
-
-    document.getElementById("result").innerText = result;
+function decrement (){
+    contador--
+    atualizarContador()
 }
 
-function reset (){
-    
+function increment (){
+    contador++
+    atualizarContador()
 }
 
-
-
-
-
+function reset() {
+   contador = contador *0 
+    atualizarContador()
+}

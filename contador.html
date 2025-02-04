@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
     <link rel="stylesheet" href="./assets/styles/index.styles.css">
-    <title></title>
+    <link rel="stylesheet" href="./assets/scripts/contador.scripts.js">
 </head>
 <body>
-    <button >
 
-        <a href="../index.html">
-            Ir Para Home Page
-        </a>
+    <button class="btn1">
 
-    </button>
-
-    <button>
         <a href="./pages/math.html">
             Ir Para Math Page
         </a>
+        
     </button>
 
-<div>
-    <input id="numeroA"type="number" placeholder="Número A"/>
-    <input id="numeroB"type="number" placeholder="Número B"/>
-    
-</div>
+    <button class="btn2" >
 
-<div>
-    <button id="btn" onclick="soma()">Soma</button>
-    <button id="btn" onclick="sub()">Subtração</button>
-    <button id="btn" onclick="reset()">Reset</button>
-
-</div>
-
-<p id="result"></p>
+        <a href="/index.html">
+            Ir Para index Page
+        </a>
+        
+    </button>
 
 
+
+    <div class="counter-container">
+        <button id="decrement" onclick="decrement()">Decréscimo</button>
+        <span id="counter">0</span>
+        <button id="increment" onclick="increment()">Acréscimo</button>
+        <br>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
     <script src="/assets/scripts/contador.scripts.js"></script>
 </body>
 </html>
