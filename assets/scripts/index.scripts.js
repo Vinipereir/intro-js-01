@@ -3,5 +3,5 @@ function exibirNome() {
 
     //console.log("nome digitado:" , nome);
 
-    document.getElementById("msg").innerHTML = nome;    
+    document.getElementById("msg").innerHTML = "Olá, " + nome + "!";    
 }

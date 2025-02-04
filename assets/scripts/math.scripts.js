@@ -1,14 +1,37 @@
-function calcular (){
-    let numA = Number(document.getElementById("numA").value);
-    let numB = Number(document.getElementById("numB").value);
+function soma (){
+    let numA = Number(document.getElementById("numeroA").value);
+    let numB = Number(document.getElementById("numeroB").value);
+
+    let result = numeroA + numeroB;
+
+    document.getElementById("result").innerText = result;
+}
+
+function sub (){
+    let numA = Number(document.getElementById("numeroA").value);
+    let numB = Number(document.getElementById("numeroB").value);
 
 
-   // alert(numA);
-   // alert(numB);
+    let result = numeroA - numeroB;
 
-   //soma
+    document.getElementById("result").innerText = result;
+}
+function sub (){
+    let numA = Number(document.getElementById("numeroA").value);
+    let numB = Number(document.getElementById("numeroB").value);
 
-    let result = numA + numB;
+
+    let result = numeroA - numeroB;
+
+    document.getElementById("result").innerText = result;
+}
+
+function divi (){
+    let numA = Number(document.getElementById("numeroA").value);
+    let numB = Number(document.getElementById("numeroB").value);
+
+
+    let result = numeroA / numeroB;
 
     document.getElementById("result").innerText = result;
 }
